@@ -27,11 +27,12 @@ const useStyles = makeStyles({
 
 export default function MediaCard(props: pricingProps) {
     const classes = useStyles();
+    const {Price, PackageTitle} = props;
     return (
         <Card className={classes.root}>
             <CardActionArea>
-                <div className={'package'}>{props.PackageTitle}</div>
-                <div className={'price'}> {props.Price}</div>
+                <div className={'package'}>{PackageTitle}</div>
+                <div className={'price'}> {Price}</div>
             </CardActionArea>
             <CardActions>
                 <Button size="small" color="primary">
