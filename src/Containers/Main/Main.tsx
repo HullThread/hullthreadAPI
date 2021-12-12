@@ -13,7 +13,6 @@ interface MainProps {
 const Main = (props: MainProps) => {
     return (
         <div>
-            <Img3/>
             <Header data={props.data.main} />
             <About data={props.data.main} />
             <Resume data={props.data.resume} />
